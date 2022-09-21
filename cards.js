@@ -15,7 +15,9 @@ var deck = [
     new card('Placement', 'How might we attract people to build our products?', 'Ehereum has a small team with a global reach.  They create an environment for crypto lovers to create and market products they love, strenghtening the platform.', 'volunteer'),
     new card('Process', 'How might we support co-creation?', 'Ehtereum has a friendly, helpful Discord community to help and support people interest in building crypto products. They bring together people in monthly hackathons and check-in regularly to ensure everyone has what they need.', 'collaborate'),
     new card('Pricing', 'How might we benefit from constraints?', 'Ethereum introduced a gas fee based on network load to deter people from transacting during peak times.', 'restrict'),
-    
+    new card('Process', 'How might we give early form to an idea?', 'Walt Disney studios introduced the storyboard as prototyping tool to make sure no scenes are missing before shooting the film.', 'prototype'),
+    new card('Technology', 'How might we communicate our idea better?', 'When Wi-Fi communications were in its infancy, Vocera developed a video scenario to demonstrate how employees could stay connected with a wearable, voice-controlled badge to demonstrate its benefits within context.', 'movie'),
+    new card('Process', 'How might we identify what is most important?', 'When Amtrak began studying ways to improve their train service, they focused on the seat designs. A user journey pointed out that there were ten steps before being seated, all important parts of the train experience. ', 'map'),
 
 ]
 
@@ -25,7 +27,7 @@ function getRandom(number) {
 }
 
 document.getElementById("shuffle").onclick = function(){
-    var index = getRandom(8);
+    var index = getRandom(11);
     var currentCard = deck[index];
 
     document.getElementById("brand").innerHTML = '<img src="/assets/' + currentCard.brand + '.jpg"></img>';
