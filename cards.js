@@ -18,6 +18,10 @@ var deck = [
     new card('Process', 'How might we give early form to an idea?', 'Walt Disney studios introduced the storyboard as prototyping tool to make sure no scenes are missing before shooting the film.', 'prototype'),
     new card('Technology', 'How might we communicate our idea better?', 'When Wi-Fi communications were in its infancy, Vocera developed a video scenario to demonstrate how employees could stay connected with a wearable, voice-controlled badge to demonstrate its benefits within context.', 'movie'),
     new card('Process', 'How might we identify what is most important?', 'When Amtrak began studying ways to improve their train service, they focused on the seat designs. A user journey pointed out that there were ten steps before being seated, all important parts of the train experience. ', 'map'),
+    new card('Product', 'How might we be more sustainable?', 'Patagonia, one of the most loved and successful outdoor clothing brands, use recycled plastic to create polyester, which forms as much as half of all clothing made and contributing to as much as a quarter of the total carbon budget globally, in an attempt to reduce the carbon footprint in a circular economy model.', 'fashion'),
+    new card('Pricing', 'How might we protect the source of our wealth for sustainable profit?', 'Patagonia, a successful outdoor clothing brand, invests their profit to causes that fight climate change, prioritizing protecting the source of their wealth over short-term profit for shareholders.', 'cotton'),
+
+ 
 
 ]
 
@@ -27,7 +31,7 @@ function getRandom(number) {
 }
 
 document.getElementById("shuffle").onclick = function(){
-    var index = getRandom(11);
+    var index = getRandom(12);
     var currentCard = deck[index];
 
     document.getElementById("brand").innerHTML = '<img src="/assets/' + currentCard.brand + '.jpg"></img>';
