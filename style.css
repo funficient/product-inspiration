@@ -102,6 +102,7 @@ button {
 
 i {
   color: white;
+  padding: 0.5rem;
 }
 
 
@@ -188,6 +189,77 @@ text-rendering: auto;
   color: #fcfcfc;
   width: min(90vw, 600px); 
 }
+
+
+.sticky {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  overflow: none;
+}
+
+.sticky i {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(245, 195, 37, 1);
+  padding: 1.2rem;
+  font-size: 1.7rem;
+
+}
+.line {
+  background-color: #333;
+  height: 2px;
+}
+
+.sticky a {
+  position: relative;
+}
+
+.sticky a::before,
+.sticky a::after {
+  --scale: 0;
+  --arrow-size: 10px;
+
+  position: absolute;
+  top: -.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: transform 50ms;
+  transform-origin: bottom center;
+}
+
+.sticky a::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+
+  content: attr(data-tooltip);
+  background: #333;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  border-radius: .3rem;
+  text-align: center;
+  width: max-content;
+}
+
+.sticky a:hover:before,
+.sticky a:hover:after {
+  --scale: 1;
+}
+
+.sticky a::after {
+  --translate-y: calc(-1 * var(--arrow-size));
+
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: var(--arrow-size) solid transparent;
+  border-top-color: #333;
+  
+}
+
+
+
 
 
 /*  ----------------------------------------------------------Responsive ----------------------------------------------------------------------------------------*/

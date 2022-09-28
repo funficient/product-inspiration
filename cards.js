@@ -21,7 +21,7 @@ var deck = [
     new card('Product', 'How might we be more sustainable?', 'Patagonia, one of the most loved and successful outdoor clothing brands, use recycled plastic to create polyester, which forms as much as half of all clothing made and contributing to as much as a quarter of the total carbon budget globally, in an attempt to reduce the carbon footprint in a circular economy model.', 'fashion'),
     new card('Pricing', 'How might we protect the source of our wealth for sustainable profit?', 'Patagonia, a successful outdoor clothing brand, invests their profit to causes that fight climate change, prioritizing protecting the source of their wealth over short-term profit for shareholders.', 'cotton'),
     new card('Product', 'How might we gain a better undertanding of our user needs?', 'Four Seasons Hotels, famous for their quality of service gives employees a perk that allows them to stay at any of the hotels worldwide for free to put them in the shoes of a customer.', 'hotel'),
-    new card('Product', 'How might we make our product timeless?', 'Instead of offering kids ready-made toys that they bore of easily, LEGO sells a system where children can build an infinite amount of different toys by arringing blocks that fit into each other.', 'lego'),
+    new card('Product', 'How might we make our product timeless?', 'Instead of offering kids ready-made toys they bore of easily, LEGO sells a system where children can build an infinite amount of different toys by arranging blocks that fit into each other.', 'lego'),
 
  
 
