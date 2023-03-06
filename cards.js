@@ -29,7 +29,10 @@ var deck = [
     new card('Technology', 'How might we make our product easier to use?', 'Amazon became one of the biggest companies globally by using technology to make it so easy for customers to buy that they preferred the variety and speed of online purchases over supporting local shops.', 'amazon'),
     new card('Technology', 'How might we make our product more accessible?', 'Netflix disrupted traditional television by allowing subscribers to watch what they want, when they want it, on any device they want.', 'netflix'),
 
- 
+    new card('Pricing', 'How might we encourage sharing?', 'Calendly provides a free calendar scheduling service for individuals. They target those individuals who frequently collaborate as a team for a premium package with extra features for teams and collaborators.', 'calendly'),
+    new card('Product', 'How might we create more retention?', 'Farmville became the most popular game because they gave users a sense of ownership by giving them responsibility to look after and grow their resources. They gave users autonomy to personalize their farm and giving them a reason to come back each day.', 'farmville'),
+    
+
 
 ]
 
@@ -39,7 +42,7 @@ function getRandom(number) {
 }
 
 document.getElementById("shuffle").onclick = function(){
-    var index = getRandom(20);
+    var index = getRandom(22);
     var currentCard = deck[index];
 
     document.getElementById("brand").innerHTML = '<img src="/assets/' + currentCard.brand + '.jpg"></img>';
