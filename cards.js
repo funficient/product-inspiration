@@ -30,8 +30,10 @@ var deck = [
     new card('Technology', 'How might we make our product more accessible?', 'Netflix disrupted traditional television by allowing subscribers to watch what they want, when they want it, on any device they want.', 'netflix'),
 
     new card('Pricing', 'How might we encourage sharing?', 'Calendly provides a free calendar scheduling service for individuals. They target those individuals who frequently collaborate as a team for a premium package with extra features for teams and collaborators.', 'calendly'),
-    new card('Product', 'How might we create more retention?', 'Farmville became the most popular game because they gave users a sense of ownership by giving them responsibility to look after and grow their resources. They gave users autonomy to personalize their farm and giving them a reason to come back each day.', 'farmville'),
-    new card('Technology', 'How might we make our product easy to integrate?', 'Stripe became one of the most popular payment processing service provider with a mission to raise the economic value of the internet. They dont only focus on the user featuers.  A core focus area of their product strategy is to create a great developer experience to allow Stripe to be integrated more easily.', 'stripe'),
+    new card('Product', 'How might we create higher customer retention?', 'Farmville became the most popular social game because they gave users a sense of ownership by giving them responsibility to look after and grow their resources. They gave users autonomy to personalize their farm, giving them a reason to come back each day.', 'farmville'),
+    new card('Technology', 'How might we make our product easy to integrate?', 'Stripe became one of the most popular payment processing service providers with a mission to raise the economic value of the internet. They dont only focus on the user featuers, a core focus of their product strategy is to create a great developer experience to allow Stripe to be integrated more easily.', 'stripe'),
+    new card('Product', 'How might we support new users better?', 'Airtable categorizes new users based on their learning style and goals rather than function or role.  They personalize the onboarding experience to support new users based on their specific needs to get started.', 'airtable-onboarding'),
+    new card('Product', 'How might we focus our efforts on customers who will be with us for the long haul?', 'Airtable focus their effort for improvement on the 5% of users that still actively use the product after a year rather than perhaps 40% of users that is active within the first month but then drop off.', 'airtable-retention'),
 
 
 ]
@@ -42,7 +44,7 @@ function getRandom(number) {
 }
 
 document.getElementById("shuffle").onclick = function(){
-    var index = getRandom(23);
+    var index = getRandom(25);
     var currentCard = deck[index];
 
     document.getElementById("brand").innerHTML = '<img src="/assets/' + currentCard.brand + '.jpg"></img>';
