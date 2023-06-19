@@ -36,7 +36,7 @@ var deck = [
     new card('Product', 'How might we focus our efforts on customers who will be with us for the long haul?', 'Airtable focus their effort for improvement on the 5% of users that still actively use the product after a year rather than perhaps 40% of users that is active within the first month but then drop off.', 'airtable-retention'),
     new card('Product', 'How might we augment the user experience?', 'Zombies Run gamifies the running experience by overlaying your music player with a fictional story where you are running away from Zombies, making running more fun.', 'zombies-run'),
     new card('Product', 'How might we build community?', 'Basecamp opened up their platform to fans.  They share user success stories, how different people use Basecamp, and ask users what features they most want, all within their own product.', 'basecamp'),
-    new card('Product', 'How might we delight our customers children?', 'The Magic Castel Hotel has a Popsicle hotline where children can order free popsicles.  The children love this, resulting in happy parents.', 'popsicle'),
+    new card('Product', 'How might we delight our customers children?', 'The Magic Castel Hotel has a Popsicle hotline where children can order free popsicles.  The children love this, resulting in happy parents who refers it to their friends.', 'popsicle'),
 
 ]
 
