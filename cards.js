@@ -37,6 +37,7 @@ var deck = [
     new card('Product', 'How might we augment the user experience?', 'Zombies Run gamifies the running experience by overlaying your music player with a fictional story where you are running away from Zombies, making running more fun.', 'zombies-run'),
     new card('Product', 'How might we build community?', 'Basecamp opened up their platform to fans.  They share user success stories, how different people use Basecamp, and ask users what features they most want, all within their own product.', 'basecamp'),
     new card('Product', 'How might we delight our customers children?', 'The Magic Castel Hotel has a Popsicle hotline where children can order free popsicles.  The children love this, resulting in happy parents who refers it to their friends.', 'popsicle'),
+    new card('Product', 'How might we bring more ambiance to our product?', 'Starbucks became one of the most successful global coffee shop brands with their vision of focusing on the ambiance.  While most coffee shops focus on the products, Starbucks wanted to bring the feeling of a vibrant Italian coffee shop to their product.  They focus on how they make customers feel when they walk into a shop. ', 'starbucks'),
 
 ]
 
@@ -46,7 +47,7 @@ function getRandom(number) {
 }
 
 document.getElementById("shuffle").onclick = function(){
-    var index = getRandom(28);
+    var index = getRandom(29);
     var currentCard = deck[index];
 
     document.getElementById("brand").innerHTML = '<img src="/assets/' + currentCard.brand + '.jpg"></img>';
